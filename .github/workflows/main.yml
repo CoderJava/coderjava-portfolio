@@ -26,4 +26,4 @@ jobs:
           git remote add origin https://${{secrets.commit_secret}}@github.com/coderjava/coderjava.github.io.git
           git add --all
           git commit -m "Deploy"
-          git push origin master
+          git push -f origin master
