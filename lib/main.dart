@@ -73,7 +73,7 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
               SizedBox(height: 32),
               Text(
                 'Yudi Setiawan',
-                style: Theme.of(context).textTheme.headline2.copyWith(color: Colors.grey[700]),
+                style: Theme.of(context).textTheme.headline2.copyWith(color: Colors.grey[900]),
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 8),
@@ -97,12 +97,69 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
                   _buildWidgetIconContact(FontAwesomeIcons.linkedin, 'https://www.linkedin.com/in/yudi-setiawan-179401131/'),
                 ],
               ),
+              SizedBox(height: 8),
+              Divider(thickness: 1),
+              SizedBox(height: 8),
+              Text(
+                'What I\'m Doing Right Now',
+                style: titleTextStyle(),
+              ),
+              Text(
+                'Careers',
+                style: subtitleTextStyle(),
+              ),
+              Text(
+                'Working as a Mobile Software Engineer at Nusanet Medan.',
+                style: bodyTextStyle(),
+              ),
+              SizedBox(height: 16),
+              Text(
+                'Activities',
+                style: subtitleTextStyle(),
+              ),
+              Text(
+                '• Learning some technology stuff from the internet, especially in mobile development.\n'
+                '• Enjoying sharing my experiences throught writing on Medium.\n'
+                '• I\'m currently focus learning Flutter.',
+                style: bodyTextStyle(),
+              ),
+              SizedBox(height: 16),
+              Text(
+                'My Stacks',
+                style: subtitleTextStyle(),
+              ),
+              Text(
+                '• Kotlin for native Android development.\n'
+                '• REST for API usage.\n'
+                '• Flutter for cross platform development.\n'
+                '• Understand and know how to use Git as collaborative tool.',
+                style: bodyTextStyle(),
+              ),
+              SizedBox(height: 16),
+              Text(
+                'Software That I Use',
+                style: subtitleTextStyle(),
+              ),
+              Text(
+                '• Code Editor: Android Studio + plugin Vim Editor and iTerm\n'
+                '• Browser: Google Chrome\n'
+                '• OS: MacOS\n'
+                '• HTTP Client: Insomnia\n'
+                '• Others: Spotify, Discord, & Spotify\n',
+                style: bodyTextStyle(),
+              ),
             ],
           ),
         ),
       ),
     );
   }
+
+  TextStyle subtitleTextStyle() => Theme.of(context).textTheme.headline5.copyWith(color: Colors.grey);
+
+  TextStyle titleTextStyle() => Theme.of(context).textTheme.headline4.copyWith(color: Colors.grey[900]);
+
+  TextStyle bodyTextStyle() => Theme.of(context).textTheme.subtitle1.copyWith(fontWeight: FontWeight.w300);
 
   Widget _buildWidgetIconContact(IconData iconData, String url) {
     return InkWell(
