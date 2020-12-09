@@ -38,9 +38,25 @@ dependencies:
   # Flutter plugin for launching a URL.
   url_launcher: ^5.7.10
 
+  # A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation,
+  # File Downloading, Timeout etc.
+  dio: ^3.0.10
+
+  # Contains code to deal with internationalized/localized messages, date and number formatting
+  # and parsing, bi-directional text, and other internationalization issues.
+  intl: ^0.16.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  # Classes and helper functions that support JSON code generation via the 'json_serializable' package.
+  json_annotation: ^3.1.1
+
+  json_serializable: ^3.5.1
+
+  # A build system for Dart code generation and modular compilation.
+  build_runner: ^1.10.9
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
